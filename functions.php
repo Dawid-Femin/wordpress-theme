@@ -1,5 +1,11 @@
 <?php
 
+function iw_theme_support() {
+    add_theme_support('title-tag');
+}
+
+add_action('wp_enqueue_scripts', 'iw_theme_support');
+
 function iw_register_styles()
 {
     $version = wp_get_theme()->get('Version');
