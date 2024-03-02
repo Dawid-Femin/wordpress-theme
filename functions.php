@@ -1,10 +1,23 @@
 <?php
 
-function iw_theme_support() {
+function iw_theme_support()
+{
     add_theme_support('title-tag');
 }
 
 add_action('wp_enqueue_scripts', 'iw_theme_support');
+
+function iw_menus()
+{
+    $locations = array(
+        'primary' => "Desktop left sidebar",
+        'footer' => "Footer menu items"
+    );
+
+    register_nav_menus($locations);
+}
+
+add_action('init', 'iw_menus');
 
 function iw_register_styles()
 {
