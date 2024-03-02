@@ -8,6 +8,8 @@
     <meta name="description" content="Site Template">
     <meta name="author" content="https://internetowa-wizytowka.pl">
 
+    <?php wp_head() ?>
+
 </head>
 <body>
 <header class="header text-center">

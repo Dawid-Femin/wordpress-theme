@@ -1,4 +1,6 @@
- <div class="main-wrapper">
+<?php get_header() ?>
+
+    <div class="main-wrapper">
         <header class="page-title theme-bg-light text-center gradient py-5">
             <h1 class="heading">Blog Home Page Heading</h1>
         </header>
@@ -69,3 +71,5 @@
             <p class="copyright"><a href="https://internetowa-wizytowka.pl">Dawid Femin</a></p>
         </footer>
     </div>
+
+<?php get_footer() ?>
