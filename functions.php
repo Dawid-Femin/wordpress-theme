@@ -3,9 +3,10 @@
 function iw_theme_support()
 {
     add_theme_support('title-tag');
+    add_theme_support('custom-logo');
 }
 
-add_action('wp_enqueue_scripts', 'iw_theme_support');
+add_action('after_setup_theme', 'iw_theme_support');
 
 function iw_menus()
 {
