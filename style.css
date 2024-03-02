@@ -42,14 +42,15 @@ Author URI: https://internetowa-wizytowka.pl
     --font-normal: 1em;
     --font-small: 0.8125rem;
     /* Sidebar */
-    --sidebar-width: 280px;
+    --sidebar-width: 250px;
     --content-max-width: 860px;
+        --border-radius: 8px;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
@@ -111,7 +112,8 @@ h6 {
     height: 100vh;
     width: var(--sidebar-width);
     background: var(--primary);
-    color: #fff
+    color: #fff;
+    border-radius: var(--border-radius);
 }
 .header .site-title {
     color:var(--white);
@@ -236,8 +238,8 @@ h6 {
 }
 
 .content .post .post-thumb {
-    max-width: 160px;
-    border-radius: 2px
+    max-width: 250px;
+    border-radius: 8px
 }
 
 .content .post .intro {
